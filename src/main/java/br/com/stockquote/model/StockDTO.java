@@ -12,9 +12,6 @@ import lombok.Setter;
 
 
 @Entity
-@Setter @Getter
-@AllArgsConstructor
-@NoArgsConstructor
 public class StockDTO {
 	
 	@Id
@@ -22,4 +19,38 @@ public class StockDTO {
 	private Long _id;
 	private String id;
 	private String description;
+	
+	
+	public StockDTO(Long _id, String id, String description) {
+		this._id = _id;
+		this.id = id;
+		this.description = description;
+	}
+	
+	public StockDTO() {
+		
+	}
+	
+	public Long get_id() {
+		return _id;
+	}
+	public void set_id(Long _id) {
+		this._id = _id;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	
+	
+	
 }
