@@ -35,8 +35,8 @@ public class SwaggerConfig {
     
 	private ApiInfo apiInfo() {
 	    return new ApiInfo(
-	      "ADVINHACAO-API", 
-	      "Esta API consiste em advinhar um valor entre 1 e 1000 ", 
+	      "STOCK QUOTE MANAGER API", 
+	      "Esta API consiste em registrar quotacoes ", 
 	      "API", 
 	      "Terms of service", 
 	      new Contact("Klesio Silva", "https://github.com/klesiossss", "klesiossss@gmail.com"), 
