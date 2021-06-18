@@ -58,7 +58,7 @@ public class QuoteStockController {
 	}
     
     
-    @ApiOperation(value = "Extra: Obtem todo historico de quotacoes para um dado id de Stock")
+    @ApiOperation(value = "Extra: Obtem todo historico de quotacoes para um dado idStock")
     @GetMapping("stock/{idStock}")
     public ResponseEntity<List<QuotedStock>> findByStock(@PathVariable String idStock) {
     	List<QuotedStock> stock =  quoteStockService.findByIdStock(idStock);

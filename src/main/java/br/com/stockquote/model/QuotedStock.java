@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "stock_")
 public class QuotedStock {
 	
-	@JsonIgnore
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long _id;

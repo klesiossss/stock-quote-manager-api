@@ -10,6 +10,15 @@ import br.com.stockquote.service.QuoteStockService;
 @SpringBootApplication
 public class StockQuoteManagerApplication implements CommandLineRunner {
 
+	/**
+	 * Para acessar a documentacao suba a aplicacao e acesse:
+	 * 
+	 * http://localhost:8081/swagger-ui.html 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * */
 	
 	@Autowired
 	QuoteStockService qss = new QuoteStockService();
