@@ -33,6 +33,7 @@ public class SwaggerConfig {
 	        .apiInfo(apiInfo());
 	}
     
+	
 	private ApiInfo apiInfo() {
 	    return new ApiInfo(
 	      "STOCK QUOTE MANAGER API", 

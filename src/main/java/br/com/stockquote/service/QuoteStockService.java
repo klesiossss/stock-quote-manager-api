@@ -63,7 +63,7 @@ public class QuoteStockService {
 	public QuotedStock salvar(QuotedStock quote) {
 		
 		if(cacheRepo.findById(quote.getIdStock()).isPresent())
-		return quotedStockRepo.save(quote);
+			return quotedStockRepo.save(quote);
 		else throw new BusinessException("Stock inexistente, Esse stock nao reflete a API stock manager");	
 	}
 	

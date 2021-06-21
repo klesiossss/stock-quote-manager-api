@@ -73,8 +73,9 @@ public class ServiceTest {
 	public  void TesteSalvandoCotacaoComCriterio() {
 		when(quotedStockRepo.save(quotedStock)).thenReturn(quotedStock);
 		
-	
-			quotedStock = quotedStockRepo.save(quotedStock);
+		
+		when(cacheRepo.findById(quotedStock.getIdStock())).thenReturn(Optional.of(stockDTO));
+			quotedStock = quotedStockService.salvar(quotedStock);
 		
 		assertAll(() -> {
 			assertEquals(quotedStock.getIdStock(),"petr4");

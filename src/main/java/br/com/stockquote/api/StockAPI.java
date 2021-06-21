@@ -26,8 +26,10 @@ import br.com.stockquote.model.StockDTO;
 			HttpEntity<String> entity = new HttpEntity<>(header);
 
 			ResponseEntity<StockDTO[]> repos = restTemplate.exchange(urlBase, HttpMethod.GET, entity, StockDTO[].class);
+			
 			List<StockDTO> res = Arrays.asList(repos.getBody());
-		
+			
+			
 			return res;
 		}
 
